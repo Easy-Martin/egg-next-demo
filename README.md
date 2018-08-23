@@ -8,7 +8,7 @@ support egg2+
 
 <!-- add docs here for user -->
 
-see [egg docs][egg] for more detail.
+see [egg docs][egg] ,[koa-react-ssr-example][[koa-react-ssr-example]] for more detail.
 
 ### Development
 
@@ -35,4 +35,4 @@ $ npm build `next build`
 
 [egg]: https://eggjs.org
 
-[PS]: https://github.com/tokenfoundry/koa-react-ssr-example
+[koa-react-ssr-example]: https://github.com/tokenfoundry/koa-react-ssr-example
