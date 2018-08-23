@@ -21,8 +21,9 @@ $ open http://localhost:7001/
 ### Deploy
 
 ```bash
-$ npm start
+$ npm start `npm run build && egg-scripts start --daemon --title=egg-server-my-demo-egg`
 $ npm stop
+$ npm build `next build`
 ```
 
 ### npm scripts
