@@ -1,9 +1,12 @@
-const nextjs = require('next');
+const next = require('next');
+const conf = require('../next.config');
+const path = require('path');
+const dev = process.env.NODE_ENV !== 'production';
 
 // We love async builder functions
 module.exports = async function setupSSR(app) {
   // Setup Next.js
-  const nextEngine = nextjs({ dev: process.env.NODE_ENV !== 'production' });
+  const nextEngine = next({ dev, conf, dir: path.resolve('./src') });
   const handle = nextEngine.getRequestHandler();
   await nextEngine.prepare();
 

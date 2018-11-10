@@ -8,7 +8,13 @@ class HomeController extends Controller {
       screen: 'Home'
     });
   }
-  comments() {
+  async login(){
+    return this.ctx.render({
+      screen:'Login',
+      props:{title:`登录`}
+    })
+  }
+  async comments() {
     const comments = this.ctx.session.comments || [];
     return this.ctx.render({
       screen: 'Comments',

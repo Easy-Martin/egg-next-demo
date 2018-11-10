@@ -8,6 +8,7 @@ module.exports = app => {
   // View endpoints
   router.get('/', controller.ssr.index);
   router.get('/comments', controller.ssr.comments);
+  router.get('/login', controller.ssr.login);
 
   //API
   router.get('/home', controller.home.index);
