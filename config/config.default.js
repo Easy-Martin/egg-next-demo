@@ -14,11 +14,20 @@ module.exports = appInfo => {
   };
 
   //TODO 中间件配置
-  config.middleware = ['loginStatus'];
+  config.middleware = [];
 
   //TODO 忽略登录判断，登录页和next相关
   config.loginStatus = {
-    ignore: ['/login','/_next']
+    ignore: ['/login', '/_next']
+  };
+
+  config.proxy = {
+    '/api': {
+      target: 'http://localhost:8892',
+      changeOrigin: true,
+      rewrite: path => path.replace(/^\/api(\/|\/\w+)?$/, '/api'),
+      logs: true
+    }
   };
 
   config.security = {

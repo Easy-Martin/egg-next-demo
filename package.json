@@ -12,6 +12,7 @@
     "egg": "^2.13.0",
     "egg-scripts": "^2.10.0",
     "egg-static": "^2.1.1",
+    "koa-proxies": "^0.8.1",
     "next": "^7.0.2",
     "node-sass": "^4.10.0",
     "react": "^16.4.2",
