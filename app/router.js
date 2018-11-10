@@ -4,11 +4,13 @@
  * @param {Egg.Application} app - egg application
  */
 module.exports = app => {
+  const loginStatus = app.middleware.loginStatus(app.config.loginStatus);
+
   const { router, controller } = app;
   // View endpoints
-  router.get('/', controller.ssr.index);
-  router.get('/comments', controller.ssr.comments);
-  router.get('/login', controller.ssr.login);
+  router.get('/', loginStatus, controller.ssr.index);
+  router.get('/comments', loginStatus, controller.ssr.comments);
+  router.get('/login', loginStatus, controller.ssr.login);
 
   //API
   router.get('/home', controller.home.index);
