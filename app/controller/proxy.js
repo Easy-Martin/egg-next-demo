@@ -26,10 +26,9 @@ class HomeController extends Controller {
     if (proxyConfig) {
       const path = proxyConfig.rewrite(this.ctx.path);
       const url = `${proxyConfig.target}${path}`;
-      result = await ctx.curl(url, config);
+      result = await ctx.curl(url, config)
       this.logger.info('%s proxy to %s', this.ctx.path, url);
     }
-
     ctx.body = result.data;
   }
 }
