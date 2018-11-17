@@ -109,26 +109,7 @@ class LoginView extends React.Component {
                     </Form>
                 </div>
                 <div className="footer-part">
-                    {/* <div className="login_footer_box">
-                        <div className="img_box">
-                            <span className="footer_img" />
-                            <span className="footer_img" />
-                        </div>
-                        <p className="footer_text">
-                            为获得最佳使用体验，建议使用谷歌浏览器最新版，并在分辨率为1920×1080的显示器上显示
-                            <a
-                                className="footer-logo-google-link"
-                                target="_blank"
-                                href="https://www.google.cn/chrome/"
-                                rel="noopener noreferrer"
-                            >
-                                下载Chrome浏览器
-                            </a>
-                            <br />
-                            Copyright 2016-2018 深圳羚羊极速科技有限公司
-                            版权所有 粤ICP备16124741号-1
-                        </p>
-                    </div> */}
+                  
                 </div>
             </Page>
         );
