@@ -28,7 +28,7 @@ module.exports = {
         "no-catch-shadow": 2, //禁止catch子句参数与外部作用域变量同名
         "no-class-assign": 2, //禁止给类赋值
         "no-cond-assign": 2, //禁止在条件表达式中使用赋值语句
-        "no-console": 2, //禁止使用console
+        "no-console": 0, //禁止使用console
         "no-const-assign": 2, //禁止修改const声明的变量
         "no-constant-condition": 2, //禁止在条件中使用常量表达式 if(true) if(1)
         "no-continue": 0, //禁止使用continue
