@@ -5,14 +5,14 @@ import { ThemeProvider } from "styled-components";
 import theme from "../themes/light";
 
 export default class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props;
-    return (
-      <Container>
-        <ThemeProvider theme={theme}>
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </Container>
-    );
-  }
+    render() {
+        const { Component, pageProps } = this.props;
+        return (
+            <Container>
+                <ThemeProvider theme={theme}>
+                    <Component {...pageProps} />
+                </ThemeProvider>
+            </Container>
+        );
+    }
 }
